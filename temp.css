@@ -1,0 +1,44 @@
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .img1 {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    .imghead {
+        display: none; /* Hide logo image on smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Adjust heading font size */
+    }
+
+    nav ul {
+        float: none;
+        text-align: center; /* Center align navigation links */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* For even smaller screens */
+@media only screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem; /* Further reduce heading font size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Further reduce paragraph font size */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
