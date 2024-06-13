@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    <title>Stock Comparison</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <h1><img src="Project_logo_homepage1.jpg" class="imghead">
+                <a class="h1"> Smart-Stocks</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Top stocks</a></li>
+                    <li><a href="https://finshots.in/archive/">News</a></li>
+                    <li><a href="aboutus.html">About-Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="display-5 my-5 text-center">Compare Stocks</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Stock</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select3" onchange="item3(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Stock Image</th>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" id="img2" alt=" ">
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" id="img3" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Stock Price</th>
+                    <td id="price1">N/A</td>
+                    <td id="price2">N/A</td>
+                    <td id="price3">N/A</td>
+                </tr>
+                <tr>
+                    <th>Stock Description</th>
+                    <td id="desc1">N/A</td>
+                    <td id="desc2">N/A</td>
+                    <td id="desc3">N/A</td>
+                </tr>
+                <tr>
+                    <th> Brand</th>
+                    <td id="brand1">N/A</td>
+                    <td id="brand2">N/A</td>
+                    <td id="brand3">N/A</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="src/data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

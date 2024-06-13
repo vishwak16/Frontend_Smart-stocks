@@ -1,50 +1,115 @@
-body{
-    
-    margin: 0;
-    padding: 20px;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgba(210, 230, 151, 0.62);
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 100%;
+  max-width: 600px;
+}
+
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input.error {
+  border-color: red;
+}
+
+button {
+  background-color: #eda325;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+p {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .split {
+      width: 100%;
+      height: auto;
+      position: relative;
   }
-  label {
-    display: block;
-    margin-bottom: 5px;
+
+  .left, .right {
+      width: 100%;
+      padding-top: 0;
   }
-  
-  input[type="text"],
-  input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
+
+  .centered {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: 20px 0;
   }
-  button {
-    background-color: #eda325;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    width: 200px;
-    
+
+  .centered img {
+      width: 80%;
   }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  .img1{
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-  }
+}
