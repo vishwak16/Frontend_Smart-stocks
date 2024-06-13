@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="loginstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
 <body>
-    <div class="split left">
-        <div class="centered">
-            <img src="login.jpg" alt="Avatar woman">
+    <img class="wave" src="wave.png" alt="Wave Image">
+    <div class="container">
+        <div class="img">
+            <img src="bg.svg" alt="Background Image">
         </div>
-    </div>
-    <div class="split right">
-        <img src="Project_logo_homepage1.jpg" class="logo">
-        <div class="centered">
-            <h1>Welcome to</h1>
-            <h1>Smart-Stocks</h1>
-            <h3>Let's get started</h3>
-            <form id="loginform">
-                <input type="text" placeholder="Username or e-mail" required>
-                <input type="password" placeholder="Password" required><br>
-                <button type="submit">Login</button>
-                <p>Forgot your password? <a href="forgotpswd.html">Click here</a><br><br>New to Smart-Stocks? <a href="signup.html">Sign Up</a></p>
+        <div class="login-content">
+            <form id="loginForm">
+                <img src="avatar.svg" alt="Avatar">
+                <h2 class="title">Welcome Back</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input" name="username" required>
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input" name="password" required>
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <input type="submit" class="btn" value="Login">
+                <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
             </form>
         </div>
     </div>
-    <script src="scriptlogin.js"></script>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
